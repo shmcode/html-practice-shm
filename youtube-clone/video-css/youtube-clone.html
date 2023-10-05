@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Youtube Clone</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="video-css/video.css">
+		<link rel="stylesheet" href="video-css/header.css">
+		<link rel="stylesheet" href="video-css/general.css">
+		<link rel="stylesheet" href="video-css/sidebar.css">
+	</head>
+	<body>
+
+		<header class="header">
+
+			<div class="left-section">
+
+				<img class="burger-icon" src="icons/hamburger-menu.svg">
+				<img class="youtube-icon" src="icons/youtube-logo.svg">
+				
+			</div>
+
+			<div class="middle-section">
+				<input class="search-bar" type="text" placeholder="Search">
+
+				<button class="search-button">
+					<img class="search-icon" src="icons/search.svg">
+					<div class="tooltip">Search</div>
+				</button>
+				
+				<button class="micro-icon">
+					<img src="icons/voice-search-icon.svg">
+					<div class="tooltip">Search with your voice</div>
+				</button>
+			</div>
+
+			<div class="right-section">
+				<div class="upload-icon-container">
+					<img class="upload-icon" src="icons/upload.svg">
+					<div class="tooltip">Create</div>
+				</div>
+				
+				<div class="apps-container">
+					<img class="grid-icon" src="icons/youtube-apps.svg">
+					<div class="tooltip">YouTube apps</div>
+				</div>
+				
+
+				<div class="notification-container">
+					<img class="notif-icon" src="icons/notifications.svg">
+					<div class="notification-count">1</div>
+					<div class="tooltip">Notifications</div>
+				</div>
+
+				<img class="shems-icon" src="images/shem-profile.jpg">
+			</div>
+
+		</header>
+
+		<nav class="side-bar">
+			
+			<div class="sidebar-div">
+				<img src="icons/home.svg">
+				<div>Home</div>
+			</div>
+
+			<div class="sidebar-div">
+				<img src="icons/explore.svg">
+				<div>Explore</div>
+			</div>
+
+			<div class="sidebar-div">
+				<img src="icons/subscriptions.svg">
+				<div>Subscriptions</div>
+			</div>
+
+			<div class="sidebar-div">
+				<img src="icons/originals.svg">
+				<div>Originals</div>
+			</div>
+
+			<div class="sidebar-div">
+				<img src="icons/youtube-music.svg">
+				<div>YouTube Music</div>
+			</div>
+
+			<div class="sidebar-div">
+				<img src="icons/library.svg">
+				<div>Library</div>
+			</div>
+		</nav>
+
+		<main>
+			<section class="video-grid">
+
+				<!--Jennie's video -->
+				<div class="video-preview">
+		
+					<div class="video-thumbnail-div">
+					<!--thumbnail -->
+						<a href="https://youtu.be/_qHHczHsLCo">
+							<img class="thumbnail-picture" src="images/hq720.jpg">
+						</a>
+						
+						<div class="video-time">4:18</div>
+					</div>
+		
+					<div class="video-info-grid">
+						<div class="channel-pic-div">
+							<!--channel picture-->
+							<a href="https://www.youtube.com/@ELLE">
+								<img class="channel-picture" src="images/elle.jpg">
+							</a>
+							
+						</div>
+		
+						<div class="video-info-div">
+							<!--video info-->
+							<a  class="video-link" href="https://youtu.be/_qHHczHsLCo">
+									Jennie Reveals Her Biggest Cheerleader & Life As A BLACKPINK Girl
+							</a>
+							
+							<a class="video-stats" href="https://www.youtube.com/@ELLE">
+								<p class="video-stats">
+									ELLE &#10004;
+								</p>
+							</a>
+					
+							<p class="youtube-account">
+								4.9M views &#183; 1 month ago
+							</p>
+						</div>
+						
+						
+					</div>
+				</div>
+		
+				<!--Sliimey Honey's Video-->
+				<div class="video-preview">
+		
+					<div class="video-thumbnail-div">
+					<!--thumbnail-->
+					<a href="https://www.youtube.com/watch?v=8Qje4o5J1QU">
+						<img class="thumbnail-picture" src="images/sliimeyhoney.jpg">
+					</a>
+					<div class="video-time">14:20</div>
+					</div>
+		
+					<div class="video-info-grid">
+						<div class="channel-pic-div">
+							<!--channel picture-->
+							<a href="https://www.youtube.com/watch?v=8Qje4o5J1QU">
+								<img class="channel-picture" src="images/abc.jpg">
+							</a>
+						</div>
+		
+						<div class="video-info-div">
+							<!--video info-->
+							<a  class="video-link" href="https://www.youtube.com/watch?v=8Qje4o5J1QU">
+								Will This 17-Year-Old Entrepreneur Take an Offer? - Shark Tank
+							</a>
+								
+							<a href="https://www.youtube.com/@ABCNetwork">
+								<p class="video-stats">
+									ABC &#10004;
+								</p>
+							</a>
+		
+							<p class="youtube-account">
+								138k views &#183; 1 month ago
+							</p>
+						</div>
+					</div>
+				</div>
+		
+				<!--SuperSimpleDev's Video-->
+				<div class="video-preview">
+		
+					<div class="video-thumbnail-div">
+					<!--thumbnail-->
+					<a href="https://www.youtube.com/watch?v=FhrJAi-eHwI">
+						<img class="thumbnail-picture" src="images/programming.jpg">
+					</a>
+					<div class="video-time">14:20</div>
+					</div>
+		
+					<div class="video-info-grid">
+						<div class="channel-pic-div">
+							<!--channel picture-->
+							<a class="video-link" href="https://www.youtube.com/watch?v=FhrJAi-eHwI">
+								<img class="channel-picture" src="images/supersimpledev.jpg">
+							</a>
+						</div>
+		
+						<div class="video-info-div">
+							<!--video info-->
+							<a class="video-link" href="https://www.youtube.com/watch?v=FhrJAi-eHwI">
+								Which programming language to learn first 2022 (with charts)
+							</a>
+							
+							<a href="https://www.youtube.com/@SuperSimpleDev">
+								<p class="video-stats">
+									SuperSimpleDev 
+								</p>
+							</a>
+		
+							<p class="youtube-account">
+								58K views &#183; 1 year ago
+							</p>
+						</div>
+					</div>
+				</div>
+		
+					<!--Tibees's Video-->
+				<div class="video-preview">
+		
+					<div class="video-thumbnail-div">
+					<!--thumbnail-->
+					<a href="https://www.youtube.com/watch?v=MGp77CmhhLw">
+						<img class="thumbnail-picture" src="images/findingx.jpg">
+					</a>
+					
+					<div class="video-time">14:20</div>
+					</div>
+		
+					<div class="video-info-grid">
+						<div class="channel-pic-div">
+							<!--channel picture-->
+							<a href="https://www.youtube.com/@tibees">
+								<img class="channel-picture" src="images/tibees.jpg">
+							</a>
+						</div>
+		
+						<div class="video-info-div">
+							<!--video info-->
+							<a class="video-link" href="https://www.youtube.com/watch?v=MGp77CmhhLw">
+								Finding X: A Mathematical Short Film
+							</a>
+							
+							<a href="https://www.youtube.com/@tibees">
+								<p class="video-stats">
+									Tibees &#10004;
+								</p>
+							</a>
+		
+							<p class="youtube-account">
+								303K views &#183; 11 months ago
+							</p>
+						</div>
+					</div>
+				</div>
+		
+				<!--CsDojo's Video-->
+				<div class="video-preview">
+		
+					<div class="video-thumbnail-div">
+					<!--thumbnail-->
+					<a href="https://www.youtube.com/watch?v=wfcWRAxRVBA">
+						<img class="thumbnail-picture" src="images/python.jpg">
+					</a>
+					
+					<div class="video-time">14:20</div>
+					</div>
+		
+					<div class="video-info-grid">
+						<div class="channel-pic-div">
+							<!--channel picture-->
+							<a href="https://www.youtube.com/@CSDojo">
+
+								<img class="channel-picture" src="images/csdojo.jpg">
+							</a>
+						</div>
+		
+						<div class="video-info-div">
+							<!--video info-->
+							<a class="video-link" href="https://www.youtube.com/watch?v=wfcWRAxRVBA">
+								Classes and Objects with Python - Part 1 (Python Tutorial #9)
+							</a>
+
+							<a href="https://www.youtube.com/@CSDojo">
+								<p class="video-stats">
+									CS Dojo &#10004;
+								</p>
+							</a>
+
+		
+							<p class="youtube-account">
+								1.3M views &#183; 4 years ago
+							</p>
+						</div>
+					</div>
+				</div>
+		
+				<!--Shuoshuo's Video-->
+				<div class="video-preview">
+		
+					<div class="video-thumbnail-div">
+					<!--thumbnail-->
+					<a href="https://www.youtube.com/watch?v=iixOh7Czw0w">
+						<img class="thumbnail-picture" src="images/chinese.jpg">
+					</a>
+					<div class="video-time">14:20</div>
+					</div>
+		
+					<div class="video-info-grid">
+						<div class="channel-pic-div">
+							<!--channel picture-->
+							<a href="https://www.youtube.com/watch?v=iixOh7Czw0w">
+								<img class="channel-picture" src="images/shuoshuo.jpg">
+							</a>
+							
+						</div>
+		
+						<div class="video-info-div">
+							<!--video info-->
+							<a class="video-link" href="https://www.youtube.com/watch?v=iixOh7Czw0w">
+								From HEAD to TOE: Common words for parts of the body in Chinese
+							</a>
+								
+							<a href="https://www.youtube.com/@ShuoshuoChinese">
+								<p class="video-stats">
+									ShuoshuoChinese說說中文
+								</p>
+							</a>
+		
+							<p class="youtube-account">
+								6.1K views &#183; 2 weeks ago
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!--Gotham's Video-->
+				<div class="video-preview">
+		
+					<div class="video-thumbnail-div">
+					<!--thumbnail-->
+					<a href="https://www.youtube.com/watch?v=ta0GhTt0iI8">
+						<img class="thumbnail-picture" src="images/magnushikaru.jpg">
+					</a>
+					<div class="video-time">28:40</div>
+					</div>
+		
+					<div class="video-info-grid">
+						<div class="channel-pic-div">
+							<!--channel picture-->
+							<a href="https://www.youtube.com/watch?v=ta0GhTt0iI8">
+								<img class="channel-picture" src="images/gothamchess.jpg">
+							</a>
+						
+						</div>
+		
+						<div class="video-info-div">
+							<!--video info-->
+							<a class="video-link" href="https://www.youtube.com/watch?v=ta0GhTt0iI8">
+								Magnus And Hikaru GO INSANE
+							</a>
+							
+							<a href="https://www.youtube.com/@GothamChess">
+								<p class="video-stats">
+									GothamChess &#10004;
+								</p>	
+							</a>
+
+							<p class="youtube-account">
+								715,977 views &#183; 2 weeks ago
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!--Meta's Video-->
+				<div class="video-preview">
+		
+					<div class="video-thumbnail-div">
+					<!--thumbnail-->
+					<a href="https://www.youtube.com/watch?v=46dZH7LDbf8">
+						<img class="thumbnail-picture" src="images/metainterview.jpg">
+					</a>
+					<div class="video-time">47:04</div>
+					</div>
+		
+					<div class="video-info-grid">
+						<div class="channel-pic-div">
+							<!--channel picture-->
+							<a href="https://www.youtube.com/watch?v=46dZH7LDbf8">
+								<img class="channel-picture" src="images/neetcode.jpg">
+							</a>
+							
+						</div>
+		
+						<div class="video-info-div">
+							<!--video info-->
+							<a class="video-link" href="https://www.youtube.com/watch?v=46dZH7LDbf8">
+								Google Coding Interview with a Meta Intern
+							</a>		
+							
+							<a href="https://www.youtube.com/@NeetCode">
+								<p class="video-stats">
+									NeetCode &#10004;
+								</p>
+							</a>
+		
+							<p class="youtube-account">
+								315,222 views &#183; 2 months ago
+							</p>
+						</div>
+					</div>
+				</div>
+
+					<!--Blackpink's Video-->
+				<div class="video-preview">
+		
+					<div class="video-thumbnail-div">
+					<!--thumbnail-->
+					<a href="https://www.youtube.com/watch?v=gWb76MIM_rk">
+						<img class="thumbnail-picture" src="images/shutdown.jpg">
+					</a>
+						<div class="video-time">3:28</div>
+					</div>
+		
+					<div class="video-info-grid">
+						<div class="channel-pic-div">
+							<!--channel picture-->
+							<a href="https://www.youtube.com/watch?v=gWb76MIM_rk">
+								<img class="channel-picture" src="images/kpop.jpg">
+							</a>
+							
+						</div>
+		
+						<div class="video-info-div">
+							<!--video info-->
+							<a class="video-link" href="https://www.youtube.com/watch?v=gWb76MIM_rk">
+								BLACKPINK - 'Shut Down' Jimmy Kimmel Live
+							</a>
+							
+							<a href="https://www.youtube.com/@SBCkpopOfficial">
+								<p class="video-stats">
+									SBCkpop
+								</p>
+							</a>
+		
+							<p class="youtube-account">
+								1.5M views &#183; 2 months ago
+							</p>
+						</div>
+					</div>
+				</div>
+
+					<!--Luisito's Video-->
+				<div class="video-preview">
+		
+					<div class="video-thumbnail-div">
+					<!--thumbnail-->
+					<a href="https://www.youtube.com/watch?v=cn3xT0OUIyw">
+						<img class="thumbnail-picture" src="images/gladiadores.jpg">
+					</a>
+					
+					<div class="video-time">14:09</div>
+					</div>
+		
+					<div class="video-info-grid">
+						<div class="channel-pic-div">
+							<!--channel picture-->
+							<a href="https://www.youtube.com/@luisitocomunica">
+								<img class="channel-picture" src="images/luisito.jpg">
+							</a>
+						</div>
+		
+						<div class="video-info-div">
+							<!--video info-->
+							<a class="video-link" href="https://www.youtube.com/watch?v=cn3xT0OUIyw">
+								Así era la vida de los GLADIADORES ROMANOS | Coliseo
+							</a>
+		
+							<a href="https://www.youtube.com/@luisitocomunica">
+								<p class="video-stats">
+									Luisito Comunica &#10004;
+								</p>
+							</a>
+		
+							<p class="youtube-account">
+								7.9M views &#183; 4 years ago
+							</p>
+						</div>
+					</div>
+				</div>
+
+					<!--Tyler's Video-->
+				<div class="video-preview">
+		
+					<div class="video-thumbnail-div">
+					<!--thumbnail-->
+					<a href="https://www.youtube.com/watch?v=QYajBFraLJ0">
+						<img class="thumbnail-picture" src="images/tylerat.jpg">
+					</a>
+					
+					<div class="video-time">1:23:02</div>
+					</div>
+		
+					<div class="video-info-grid">
+						<div class="channel-pic-div">
+							<!--channel picture-->
+							<a href="https://www.youtube.com/@TylerTheCreator">
+								<img class="channel-picture" src="images/tylerr.jpg">
+							</a>
+						</div>
+		
+						<div class="video-info-div">
+							<!--video info-->
+							<a class="video-link" href="https://www.youtube.com/watch?v=QYajBFraLJ0">
+								Tyler, The Creator - Live at Lollapalooza
+							</a>
+							
+							<a href="https://www.youtube.com/@TylerTheCreator">
+								<p class="video-stats">
+									Tyler, The Creator &#9834;
+								</p>
+							</a>
+		
+							<p class="youtube-account">
+								6.3M views &#183; 1 year ago
+							</p>
+						</div>
+					</div>
+				</div>
+
+					<!--Kali's Video-->
+				<div class="video-preview">
+		
+					<div class="video-thumbnail-div">
+					<!--thumbnail-->
+					<a href="https://www.youtube.com/watch?v=3aMLZm8ykoE">
+						<img class="thumbnail-picture" src="images/fuemejor.jpg">
+					</a>
+					
+					<div class="video-time">3:52</div>
+					</div>
+		
+					<div class="video-info-grid">
+						<div class="channel-pic-div">
+							<!--channel picture-->
+							<a href="https://www.youtube.com/channel/UCQTuAezPu6MOpcIJ1Tz9dNA">
+								<img class="channel-picture" src="images/kali uchis.jpg">
+							</a>
+							
+						</div>
+		
+						<div class="video-info-div">
+							<!--video info-->
+							<a class="video-link" href="https://www.youtube.com/watch?v=3aMLZm8ykoE">
+								Kali Uchis - fue mejor feat. SZA (Official Video)
+							</a>
+							
+							<a href="https://www.youtube.com/channel/UCQTuAezPu6MOpcIJ1Tz9dNA">
+								<p class="video-stats">
+									KALI UCHIS &#9834;
+								</p>
+							</a>
+		
+							<p class="youtube-account">
+								16M views &#183; 1 year ago
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</section>
+		</main>
+</body>
+</html>

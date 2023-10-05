@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,300&family=Poppins&display=swap" rel="stylesheet"> 
+  <title>Document</title>
+  <style>
+
+    :root{
+      --primary-color: #E0E0E0;
+      --secondary-color: #D47B11;
+      --third-color: #D9D9D9; 
+      --button-one: #D1D1D1;
+      -button-hover: #949494;
+      --button-text: #525252;
+      --result: #525252;
+
+    }
+
+    .dark-mode{
+      --primary-color: #404040;
+      --secondary-color: #AD5E00;
+      --third-color: #525252;
+      --button-one:#848484;
+      --button-text:#414141;
+      --result: #fefefe;
+    }
+
+    .titulo{
+      color: var(--secondary-color);
+      font-weight: 500;
+      font-size: 45px;
+      padding-left: 52px;
+      padding-top: 40px;
+      transition: 0.5s;
+    }
+
+    .header{
+      display:flex;
+      height: 135px;
+      position: fixed;
+      top: 0;
+      left:0;
+      right: 0;
+      flex-direction: row;
+      justify-content: space-between;
+      transition: 0.5s;
+    }
+
+    #icon{
+      width: 70px;
+      height: 72px;
+      cursor: pointer;
+      padding-right: 50px;
+      padding-top: 31px;
+      transition: 0.6s;
+    }
+
+    .contenedor{
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: var(--primary-color);
+        transition: 0.5s;
+        
+    }
+
+    div{
+      font-family: 'Montserrat', 'Poppins'; 
+    }
+   
+    .calculator{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 120px 280px 100px;
+      width: 550px;
+      box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+      background-color: var(--third-color);
+      border-radius: 20px;
+      height: 520px;
+      position: relative;
+      top:135px;
+      left: 52px;
+    }
+
+    .numbers{
+      display: grid;
+      grid-template-rows: 90px 90px 90px;
+      grid-template-columns: 82px 82px 82px 82px 82px 82px;
+      margin-left:30px;
+      align-items: center;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .calculatorContainer{
+      display: grid;
+      grid-template-rows: 90px;
+      grid-template-columns: 82px 82px 82px 82px 82px;
+      margin-left:30px;
+      align-items: center;
+      text-align: center;
+    }
+
+    .number,
+    .operation{
+    width: 70px;
+    height: 70px;
+    background-color: var(--button-one);
+    border-radius: 55px;
+    margin-left: 10px;
+    }
+
+    .operation{
+      background-color: var(--secondary-color);
+    }
+
+    .operation .text,
+    .equal .text{
+      color: #FFFF;
+    }
+
+    .equal .text{
+      margin-top: 30px;
+    }
+
+    .text{
+      margin-top: 17px;
+      font-size: 30px;
+      font-weight: 500;
+      color: var(--button-text);
+    }
+
+    .equal{
+      position: absolute;
+      width: 70px;
+      height: 165px;
+      border-radius: 50px;
+      border: 1px solid var(--secondary-color);
+      background-color: var(--secondary-color);
+      right: 29px ;
+      bottom: 40px;
+    }
+
+    .previous-operand{
+      color: #9A9A9A;
+      font-size: 19px;
+      margin: 32px 0 0 48px;
+    }
+
+    .current-operand{
+      color: var(--result);
+      font-size: 40px;
+      font-weight: 500;
+      margin: 0 0 0 48px;
+    }
+    
+    .resultado{
+      border-bottom: 1px solid #b3b3b3;
+      display:flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-around;
+      word-wrap: break-word;
+      word-break: break-all;
+      padding: 12px 10px;
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+
+    .number:hover
+    {
+     box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    }
+
+    .operation:hover,
+    .equal:hover{
+      box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+      opacity: 0.7;
+    }
+
+    .number,
+    .operation,
+    .equal{
+      cursor: pointer;
+    }
+  </style>
+
+
+</head>
+<body>
+
+  <div class="contenedor">
+      
+    <header class="header">
+      <div class="titulo">CALCULADORA</div>
+      <div class="imageDiv">
+        <img src="moon.png" id="icon">
+      </div>
+    </header>
+
+    <main>
+      <section class="calculator">
+        <div class="resultado" >
+          <div class="previous-operand" data-previous-operand>3 x 2</div>
+          <div class="current-operand"  data-current-operand>6</div>
+        </div>
+        <div class="numbers">
+          <div class="number">
+            <p class="text" data-number>7</p>
+          </div>
+          <div class="number">
+            <p class="text" data-number>8</p>
+          </div>
+          <div class="number">
+            <p class="text" data-number>9</p>
+          </div>
+          <div class="operation">
+            <p class="text"  data-operation>/</p>
+          </div>
+          <div class="operation">
+            <p class="text" data-operation>x²</p>
+          </div>
+          <div class="operation">
+            <p class="text" data-all-clear>AC</p>
+          </div>
+
+          <div class="number">
+            <p class="text" data-number>4</p>
+          </div>
+          <div class="number">
+            <p class="text" data-number>5</p>
+          </div>
+          <div class="number">
+            <p class="text" data-number>6</p>
+          </div>
+          <div class="operation">
+            <p class="text"  data-operation >x</p>
+          </div>
+          <div class="operation">
+            <p class="text"  data-operation>x³</p>
+          </div>
+          <div class="operation">
+            <p class="text"  data-operation>√</p>
+          </div>
+
+          <div class="number">
+            <p class="text" data-number>1</p>
+          </div>
+          <div class="number">
+            <p class="text" data-number>2</p>
+          </div>
+          <div class="number">
+            <p class="text" data-number>3</p>
+          </div>
+          <div class="operation">
+            <p class="text"  data-operation> -</p>
+          </div>
+          <div class="operation">
+            <p class="text"  data-operation>∛</p>
+          </div>
+
+        </div>
+
+        <div class="calculatorContainer">
+         
+          <div class="number">
+            <p class="text" data-negative >+/-</p>
+          </div>
+          <div class="number">
+            <p class="text" data-number>0</p>
+          </div>
+          <div class="number">
+            <p class="text" data.number>.</p>
+          </div>
+          <div class="operation">
+            <p class="text" data-operation >+</p>
+          </div>
+          <div class="operation">
+            <p class="text" data-pi>π</p>
+          </div>
+        </div>
+
+        <button class="equal">
+          <p class="text" data-equals > = </p>
+        </button>
+       
+      </section>  
+
+      <div>
+
+      </div>
+    </main>
+
+ 
+
+  </div>
+
+  
+  <script>
+
+    const icon = document.getElementById('icon');
+    const numberButtons = document.querySelectorAll('[data-number]');
+    const operationButtons = document.querySelectorAll('[data-operation]');
+    const equalsButton = document.querySelector('[data-equals]');
+    const allClearButton = document.querySelector('[data-all-clear]');
+    const previousOperand = document.querySelector('[data-previous-operand]');
+    const currentOperand = document.querySelector('[data-current-operand]');
+
+    class Calculator {
+      constructor(previousOperand, currentOperand){
+        this.previousOperand = previousOperand;
+        this.currentOperand = currentOperand;
+        this.clear();
+      }
+
+      clear() {
+        this.currentOperand = '';
+        this.previousOperand = '';
+        this.operation = undefined;
+      }
+
+      appendNumber(number){
+        this.currentOperand = number;
+      }
+
+      chooseOperation(operation){
+
+      }
+
+      compute(){
+
+      }
+
+      updateDisplay(){
+        document.currentOperand.innerText = this.currentOperand;
+      }
+    }
+
+    icon.onclick = function () {
+      document.body.classList.toggle("dark-mode");
+      if (document.body.classList.contains("dark-mode")){
+        icon.src = "Diseño sin título.png";
+      }else{
+        icon.src = "moon.png";
+      }
+    }
+
+    const calculator = new Calculator(previousOperand,
+    currentOperand)
+
+    numberButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        calculator.appendNumber(button.innerText);
+        calculator.updateDisplay();
+      })
+    })
+
+  </script>
+</body>
+</html>

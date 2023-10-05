@@ -1,0 +1,66 @@
+a:hover{
+    color:rgb(200, 52, 52);
+  }
+  p{
+  
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .product{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .info{
+    font-size:18px;
+    font-weight:bold;
+    color:rgb(0,118,0);
+  }
+  
+  .delivery{
+    font-size:17px;
+  }
+  
+  .add-button{
+    background-color: rgb(245, 206, 15);
+    color:black;
+    border-style: solid;
+    border-color:rgb(245, 206, 15);
+    border-radius:25px;
+    width:125px;
+    height:35px;
+    cursor:pointer;
+    margin-right: 8px;
+    transition: background-color 0.15s, border-color 0.15s, opacity 0.15s;
+  }
+  
+  .add-button:hover{
+    background-color:rgb(200, 169, 16);
+    border-color:rgb(200, 169, 16);
+  }
+  
+  .add-button:active{
+    opacity: 0.7;
+  }
+  
+  .buy-button{ 
+    background-color: rgb(255,164,28);
+    color:black;
+    border-style: solid;
+    border-color:rgb(255,164,28);
+    border-radius:25px;
+    width:125px;
+    height:35px;
+    cursor:pointer;
+    margin-right: 8px;
+    transition: background-color 0.15s, border-color 0.15s, opacity 0.15s;
+  }
+  
+  .buy-button:hover{
+    background-color: rgb(219, 137, 14);
+    border-color:rgb(219, 137, 14);
+  }
+  
+  .buy-button:active{
+    opacity: 0.7;
+  }
+    

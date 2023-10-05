@@ -1,0 +1,20 @@
+.title{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: montserrat;
+    text-align: center;
+    padding-bottom:0;
+    margin-bottom:5px;
+}
+
+.description{
+    font-size: 18px;
+    font-family: montserrat;
+    text-align: center;
+    margin-top: 10px;
+    padding-top:0;
+}
+
+.details{
+    text-decoration: underline;
+}

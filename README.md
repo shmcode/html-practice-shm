@@ -1,2 +1,2 @@
 # html-practice-shm
-Ejercicios y Proyectos de HTML &amp; CSS
+Developed a YouTube Home Web Page Clone using only HTML, CSS and JavaScript. 
